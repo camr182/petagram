@@ -70,7 +70,7 @@ public class Fragment_listado_mascotasPresenter implements IFragment_listado_mas
     public void obtenerMediosRecientes() {
 
         SharedPreferences preps = context.getSharedPreferences("datosPersonales", Context.MODE_PRIVATE);
-        String idUsuario = preps.getString(JsonKeys.USER_ID, "");
+        String idUsuario = preps.getString(JsonKeys.USER_ID, "5075864862");
 
         RestApiAdapter restApiAdapter = new RestApiAdapter();
         Gson gsonMediaRecent = restApiAdapter.construyeGsonDeserializadorMediaRecent();
